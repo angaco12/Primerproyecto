@@ -35,7 +35,7 @@ namespace AspNetCoreWebAPI.Repositories
         {  
 
             List<User> users = new List<User>();
-            string query = "SELECT * FROM Users";
+            string query = "SELECT * FROM Users where LastName='anderson'";
             // ACA SE CREA LA CONEXIÓN, SE CREA UN OBJETO SQLCONNECTION Y SE LE ENVIA LA CADENA DE CONEXIÓN
             using(var connection = new SqlConnection(connectionString))
             {
