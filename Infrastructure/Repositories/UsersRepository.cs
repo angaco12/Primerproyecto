@@ -35,7 +35,7 @@ namespace AspNetCoreWebAPI.Repositories
         {  
 
             List<User> users = new List<User>();
-            string query = "SELECT * FROM Users where LastName='anderson'";
+            string query = "SELECT * FROM Users where NickName='anderson'";
             // ACA SE CREA LA CONEXIÓN, SE CREA UN OBJETO SQLCONNECTION Y SE LE ENVIA LA CADENA DE CONEXIÓN
             using(var connection = new SqlConnection(connectionString))
             {
@@ -43,7 +43,7 @@ namespace AspNetCoreWebAPI.Repositories
             }
 
             return users;
-        }
+    
 
         public void AddUser(Infrastructure.Models.User user)
         {
