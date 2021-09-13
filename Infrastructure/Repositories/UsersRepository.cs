@@ -43,7 +43,7 @@ namespace AspNetCoreWebAPI.Repositories
             }
 
             return users;
-    
+        }
 
         public void AddUser(Infrastructure.Models.User user)
         {
